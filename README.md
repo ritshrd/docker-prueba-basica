@@ -23,13 +23,39 @@ WINDOWS:
 **2.2 Describe brevemente qué es Docker Hub y cómo se puede utilizar en el contexto de Docker.**
 
 Docker hub es un repositiorio/biblioteca en la nube donde se pueden descargar imagenes de docker listas para usar. En docker estos repositorios sirven para crear una imagen rapidamente se instalan directamende desde la terminal.
+
 Ejemplo:
+
 docker pull postgres
+
 docker pull node
 
 **3) Manipulación de Contenedores**
-**3.1 Crea un archivo Dockerfile simple que utilice una imagen base de Ubuntu y ejecute el comando**
-"Hello, Docker!" al iniciar el contenedor.  (PARA ESTE CASO PUEDES USAR CHATGPT O BLACKBOX IA)
+**3.1 Crea un archivo Dockerfile simple que utilice una imagen base de Ubuntu y ejecute el comando "Hello, Docker!" al iniciar el contenedor.  (PARA ESTE CASO PUEDES USAR CHATGPT O BLACKBOX IA)**
+
+--Dockerfile--
+
+```
+#Configuramos la imagen base de node y la version con la que se va a ejecutar
+FROM node:14
+
+#Confguramos el directorio para trabajar
+WORKDIR /app
+
+#Copia el arcivo package.json y package-Lock.json a la imagen de Docekr 
+COPY package.json /app/
+
+#instalamos dependencias
+RUN npm install
+
+# Copia el archivo en el contenedor
+COPY hello.js /app/
+
+# Ejecuta el script cuando se inicia el contenedor
+CMD ["node", "hello.js"]
+```
+
+
 **3.2 Explica la diferencia entre los comandos docker ps y docker ps -a. ¿Qué información proporciona cada uno?**
 
 **4)  Redes en Docker**
