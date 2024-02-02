@@ -7,6 +7,8 @@
 Docker es un software que nos permite empaquetar aplicaciones dentro de contenedores, su proposito es facilitar la ejecución de estas aplicaciones en diferentes entornos.
 
 **1.2 ¿Cuál es la diferencia entre una imagen y un contenedor en Docker?**
+Una imagen contiene toda la configuración necesaria para ejecutar un contenedor.
+Un contenedor contiene toda la configuración para ejecutar nuestra aplicación, codigo, dependencias, variables de entorno.
 
 **2) Instalación y Configuración**
 **2.1 Proporciona los pasos básicos para instalar Docker en un sistema operativo WINDOWS/LINUX/MAC (ELIGE UNO).**
