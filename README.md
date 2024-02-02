@@ -1,7 +1,9 @@
 # docker-prueba-basica
 
 1)  Conceptos Básicos
+
 **1.1 Explica en tus propias palabras qué es Docker y cuál es su propósito principal.**
+
 Docker es un software que nos permite empaquetar aplicaciones dentro de contenedores, su proposito es facilitar la ejecución de estas aplicaciones en diferentes entornos.
 1.2 ¿Cuál es la diferencia entre una imagen y un contenedor en Docker?
 3) Instalación y Configuración
