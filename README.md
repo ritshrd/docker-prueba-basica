@@ -86,7 +86,12 @@ docker run -it --name mi_contenedor --network mi_red ubuntu
 
 **5)  Persistencia de Datos**
 **5.1 Explica la diferencia entre montar un volumen y copiar archivos directamente dentro de un contenedor.**
+
+Montar un volumen en Docker permite mantener la sincronización entre una carpeta en el host y una carpeta en el contenedor, mientras que copiar archivos directamente dentro del contenedor almacena los archivos dentro del propio contenedor sin sincronización con el host.
+
 **5.2 ¿Cuál es la ventaja de utilizar volúmenes en Docker para la persistencia de datos?**
+
+La ventaja de utilizar volúmenes en Docker para la persistencia de datos es que permite mantener los datos persistentes incluso si el contenedor se elimina o se detiene, y se pueden compartir entre contenedores.
 
 **6) Composición con Docker Compose**
 **6.1 ¿Qué es Docker Compose y para qué se utiliza?**
