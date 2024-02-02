@@ -5,15 +5,19 @@
 **1.1 Explica en tus propias palabras qué es Docker y cuál es su propósito principal.**
 
 Docker es un software que nos permite empaquetar aplicaciones dentro de contenedores, su proposito es facilitar la ejecución de estas aplicaciones en diferentes entornos.
-1.2 ¿Cuál es la diferencia entre una imagen y un contenedor en Docker?
-3) Instalación y Configuración
-2.1 Proporciona los pasos básicos para instalar Docker en un sistema operativo WINDOWS/LINUX/MAC (ELIGE UNO).
-2.2 Describe brevemente qué es Docker Hub y cómo se puede utilizar en el contexto de Docker.
-4) Manipulación de Contenedores
-3.1 Crea un archivo Dockerfile simple que utilice una imagen base de Ubuntu y ejecute el comando
+
+**1.2 ¿Cuál es la diferencia entre una imagen y un contenedor en Docker?**
+
+**2) Instalación y Configuración**
+**2.1 Proporciona los pasos básicos para instalar Docker en un sistema operativo WINDOWS/LINUX/MAC (ELIGE UNO).**
+**2.2 Describe brevemente qué es Docker Hub y cómo se puede utilizar en el contexto de Docker.**
+
+**3) Manipulación de Contenedores**
+**3.1 Crea un archivo Dockerfile simple que utilice una imagen base de Ubuntu y ejecute el comando**
 "Hello, Docker!" al iniciar el contenedor.  (PARA ESTE CASO PUEDES USAR CHATGPT O BLACKBOX IA)
-3.2 Explica la diferencia entre los comandos docker ps y docker ps -a. ¿Qué información proporciona cada uno?
-5)  Redes en Docker
+**3.2 Explica la diferencia entre los comandos docker ps y docker ps -a. ¿Qué información proporciona cada uno?**
+
+4)  Redes en Docker
 4.1 ¿Cómo se pueden listar las redes disponibles en Docker?
 4.2 Crea una red en Docker llamada "mi_red" y explica cómo asignar un contenedor a esta red al momento de iniciarlo.
 6)  Persistencia de Datos
