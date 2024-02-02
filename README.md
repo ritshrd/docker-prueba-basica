@@ -26,9 +26,10 @@ Docker hub es un repositiorio/biblioteca en la nube donde se pueden descargar im
 
 Ejemplo:
 
+```
 docker pull postgres
-
 docker pull node
+```
 
 **3) Manipulación de Contenedores**
 **3.1 Crea un archivo Dockerfile simple que utilice una imagen base de Ubuntu y ejecute el comando "Hello, Docker!" al iniciar el contenedor.  (PARA ESTE CASO PUEDES USAR CHATGPT O BLACKBOX IA)**
@@ -58,6 +59,15 @@ CMD ["node", "hello.js"]
 
 **3.2 Explica la diferencia entre los comandos docker ps y docker ps -a. ¿Qué información proporciona cada uno?**
 
+Este comando muestra una lista de todos los contenedores de Docker en ejecución.
+```
+docker ps
+```
+Este comando muestra una lista de todos los contenedores de Docker en ejecución incluidos los detenidos.
+
+```
+docker ps -a
+```
 **4)  Redes en Docker**
 **4.1 ¿Cómo se pueden listar las redes disponibles en Docker?**
 **4.2 Crea una red en Docker llamada "mi_red" y explica cómo asignar un contenedor a esta red al momento de iniciarlo.**
