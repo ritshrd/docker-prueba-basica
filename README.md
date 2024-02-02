@@ -70,7 +70,19 @@ docker ps -a
 ```
 **4)  Redes en Docker**
 **4.1 ¿Cómo se pueden listar las redes disponibles en Docker?**
+```
+docker network ls
+```
 **4.2 Crea una red en Docker llamada "mi_red" y explica cómo asignar un contenedor a esta red al momento de iniciarlo.**
+
+```
+# creamos la red
+docker network create mi_red
+
+# Para asignar un contenedor a la red al momento de iniciarlo usamos el parámetro --network seguido del nombre de la red usamos --name para asignar un nombre al contenedor.
+docker run -it --name mi_contenedor --network mi_red ubuntu
+# De esta manera, el contenedor "mi_contenedor" estará conectado a la red "mi_red".
+```
 
 **5)  Persistencia de Datos**
 **5.1 Explica la diferencia entre montar un volumen y copiar archivos directamente dentro de un contenedor.**
