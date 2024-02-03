@@ -94,12 +94,18 @@ Montar un volumen en Docker permite mantener la sincronización entre una carpet
 La ventaja de utilizar volúmenes en Docker para la persistencia de datos es que permite mantener los datos persistentes incluso si el contenedor se elimina o se detiene, y se pueden compartir entre contenedores.
 
 **6) Composición con Docker Compose**
+
 **6.1 ¿Qué es Docker Compose y para qué se utiliza?**
-**6.2 Crea un archivo docker-compose.yml para definir dos servicios:**
-uno que utilice la imagen de Mongo y otro que utilice la imagen de Node Version 14.
-Asegúrate de especificar la red a la que pertenecerán ambos servicios.
+
+ ocker Compose es una utilidad que te permite definir y ejecutar aplicaciones Docker que constan de varios contenedores. En un solo archivo se especifica los servicios, redes y volúmenes necesarios para tu aplicación. 
+
+**6.2 Crea un archivo docker-compose.yml para definir dos servicios:uno que utilice la imagen de Mongo y otro que utilice la imagen de Node Version 14. Asegúrate de especificar la red a la que pertenecerán ambos servicios.**
+
 
 **7)  Resolución de Problemas**
-**7.1 Imagina que un contenedor no se inicia correctamente.**
- Proporciona algunos pasos que seguirías para identificar y solucionar el problema.
+
+**7.1 Imagina que un contenedor no se inicia correctamente.Proporciona algunos pasos que seguirías para identificar y solucionar el problema.**
+
 **7.2 ¿Cómo puedes acceder a la shell de un contenedor en ejecución?**
+
+```docker exec -it nombre_contenedor bash```
