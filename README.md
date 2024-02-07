@@ -101,10 +101,45 @@ La ventaja de utilizar volúmenes en Docker para la persistencia de datos es que
 
 **6.2 Crea un archivo docker-compose.yml para definir dos servicios:uno que utilice la imagen de Mongo y otro que utilice la imagen de Node Version 14. Asegúrate de especificar la red a la que pertenecerán ambos servicios.**
 
+```
+version: '3'
+
+services:
+  mongo:
+    image: mongo
+    container_name: mongo
+    networks:
+      - mynetwork
+
+  node:
+    image: node:14
+    container_name: node
+    volumes:
+      - ./node_project:/app
+    working_dir: /app
+    command: npm start
+    ports:
+      - 8080:8080
+    depends_on:
+      - mongo
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
+```
 
 **7)  Resolución de Problemas**
 
 **7.1 Imagina que un contenedor no se inicia correctamente.Proporciona algunos pasos que seguirías para identificar y solucionar el problema.**
+
+Verificar el estado del contenedor:`docker ps -a`
+Verificar la configuración del contenedor: Revisar el archivo `docker-compose.yml`
+Verificar el archivo Dockerfile
+Verificar las variables de entorno
+  
+
 
 **7.2 ¿Cómo puedes acceder a la shell de un contenedor en ejecución?**
 
