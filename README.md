@@ -135,8 +135,11 @@ networks:
 **7.1 Imagina que un contenedor no se inicia correctamente.Proporciona algunos pasos que seguirías para identificar y solucionar el problema.**
 
 Verificar el estado del contenedor:`docker ps -a`
+
 Verificar la configuración del contenedor: Revisar el archivo `docker-compose.yml`
+
 Verificar el archivo Dockerfile
+
 Verificar las variables de entorno
   
 
